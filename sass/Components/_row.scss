@@ -1,0 +1,12 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -$pd-0;
+    margin-left: -$pd-0;
+    gap: 0;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}

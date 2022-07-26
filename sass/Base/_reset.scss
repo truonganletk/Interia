@@ -28,3 +28,17 @@ img{
 a, a:focus, a:active, a:hover {
     text-decoration: none;
 }
+
+p{
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 0;
+}
+
+h2 + p{
+    margin-top: 28px;
+}
+
+* + p{
+    margin-top: $mg-0;
+}

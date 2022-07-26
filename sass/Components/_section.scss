@@ -1,3 +1,7 @@
 .section{
     position: relative;
+    &.section-lg{
+        padding: $pd-5 + 4 0 $pd-5 + 2;
+    }
 }
+
