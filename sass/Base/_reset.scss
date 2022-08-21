@@ -42,3 +42,9 @@ h2 + p{
 * + p{
     margin-top: $mg-0;
 }
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,150 @@
+.budget {
+    background-color: $black-1;
+    text-align: center;
+    .range {
+        margin: 51px 50px 0;
+        height: 31px;
+        background-color: #3b3b3b;
+        box-shadow: inset 2px 2px 4px rgb(0 0 0 / 25%);
+        border-radius: 10em;
+    }
+    .owl-pagination {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -35px;
+        padding: 0 25px;
+        color: $white;
+        .owl-dots {
+            padding-top: 70px;
+            cursor: pointer;
+            position: relative;
+            &.active {
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 50%;
+                    z-index: 1;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    transform: translate(-50%, 0);
+                    transform-origin: 0 15%;
+                    transition: transform 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+                    overflow: visible;
+                    background: radial-gradient(20px at 50% 50%, #ffffff 0%, #dfdfdf 100%);
+                    background-clip: padding-box;
+                    box-shadow: 6px 4px 4px rgb(0 0 0 / 30%);
+                }
+                span {
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: -35px;
+                        right: 30px;
+                        height: 12px;
+                        border-radius: 7px;
+                        background: #ffdc25;
+                        pointer-events: none;
+                        // left: -193px;
+                        left: -239px;
+                        display: block;
+                    }
+                }
+            }
+            span {
+                font-weight: $fw-2;
+                font-size: 22px;
+                padding-top: 23px;
+                position: relative;
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    height: 16px;
+                    width: 2px;
+                    background: #ffffff;
+                }
+            }
+        }
+    }
+    .budget-option {
+        margin-top: $mg-1;
+        position: relative;
+        overflow: hidden;
+        .budget-item {
+            display: none;
+            &.active {
+                display: block;
+            }
+            .pricing-box {
+                font-size: $fs-1;
+                display: inline-block;
+                padding: 10px 32px;
+                text-align: center;
+                font-size: 32px;
+                font-weight: 600;
+                color: #ffffff;
+                background-color: #3b3b3b;
+                border-radius: 10em;
+                box-shadow: 0 0 30px rgb(0 0 0 / 25%);
+                border: none;
+                margin-top: $mg-2 - 2;
+                margin-bottom: $mg-4;
+            }
+            .thumbnail {
+                box-shadow: 0 10px 10px rgb(0 0 0 / 25%);
+                border-radius: 4px;
+                overflow: hidden;
+                img {
+                    transition: all 0.3s ease-in-out;
+                    width: 100%;
+                }
+                &:hover {
+                    img {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+            .budget-item-title {
+                font-size: $fs-2;
+                color: $white;
+                font-weight: $fw-2;
+                margin-top: 30px;
+                text-align: center;
+            }
+            .list-decorative {
+                text-align: left;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-top: 37px;
+                li {
+                    position: relative;
+                    flex-basis: 26%;
+                    width: 26%;
+                    max-width: 26%;
+                    padding-left: 14px;
+                    color: rgba(255, 255, 255, 0.7);
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        left: 0;
+                        top: 40%;
+                        transform: translate3d(0, -50%, 0);
+                        border-style: solid;
+                        border-width: 4px 0 4px 8px;
+                        border-color: transparent transparent transparent #ffdc25;
+                    }
+                }
+            }
+        }
+    }
+}

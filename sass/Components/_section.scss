@@ -3,5 +3,24 @@
     &.section-lg{
         padding: $pd-5 + 4 0 $pd-5 + 2;
     }
+    &.section-sm{
+        padding: $pd-6 - 1 0 $pd-7;
+        padding: $pd-5 + 4 0 $pd-5 + 2;
+    }
+    .section-title {
+        font-size: 46px;
+        line-height: 1.17391;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 600;
+        color: $white;
+        letter-spacing: -0.02em;
+    }
+    .section-subtitle{
+        margin-top: $mg-0 - 3;
+        font-size: $fs-2;
+        font-weight: $fw-2;
+        color: $yellow-1;
+    }
 }
 

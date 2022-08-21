@@ -66,13 +66,14 @@
         .bannertxt{
             max-width: 360px;
             padding: 0;
-            padding-top: $pd-4;
+            padding-top: $pd-7 + 1;
             padding-bottom: $pd-5;
             margin-left: $mg-5;        
             h2{
                 font-size: $fs-1;
                 line-height: 1.17391;
                 color: $white;
+                font-weight: $fw-1;
             }
             p{
                 margin-top: $mg-1 + 4;
