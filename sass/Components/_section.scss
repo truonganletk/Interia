@@ -5,7 +5,9 @@
     }
     &.section-sm{
         padding: $pd-6 - 1 0 $pd-7;
-        padding: $pd-5 + 4 0 $pd-5 + 2;
+    }
+    &.section-md{
+        padding: $pd-6 - 1 0 $pd-7;
     }
     .section-title {
         font-size: 46px;

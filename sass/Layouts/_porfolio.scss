@@ -1,0 +1,67 @@
+.portfolio {
+    padding-bottom: 0 !important;
+    .portfolio_overlay {
+        position: absolute;
+        top: 42.5%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+        background-position: center center;
+        background-color: $gray-2;
+    }
+    .portfolio_title {
+        font-size: 46px;
+        line-height: 1.17391;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 600;
+        color: #2d2d2d;
+        letter-spacing: -0.02em;
+    }
+    .carousel {
+        padding: 34px 0 100px;
+        margin-top: $mg-6;
+        .carousel-item {
+            .item-block {
+                padding-right: 30px;
+            }
+            .carousel-item-title {
+                margin-top: 33px;
+                font-size: 22px;
+                margin-bottom: 0;
+                font-weight: 600;
+                a {
+                    color: $black-3;
+                }
+            }
+            .carousel-item-description {
+                margin-top: 9px;
+                color: rgba(0, 0, 0, 0.6);
+                display: flex;
+                flex-wrap: wrap;
+                li:not(:last-of-type)::after {
+                    content: ",\00a0";
+                }
+            }
+        }
+        .carousel-control {
+            background-color: #2c2c2c;
+            position: absolute;
+            display: inline-block;
+            width: 111px;
+            height: 57px;
+            bottom: 0;
+            right: calc(33% + 35px);
+            .carousel-control-next,
+            .carousel-control-prev {
+                color: rgba(255, 255, 255, 0.5);
+                width: 50%;
+                text-align: center;
+                font-size: 20px;
+                transition: all 0.3s ease-in-out;
+                background-color: $black-1;
+            }
+        }
+    }
+}

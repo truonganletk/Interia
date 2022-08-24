@@ -1,9 +1,11 @@
 .whyChooseUs {
+    max-width: 100%;
     background-image: url(../images/home-16-768x450.png);
     background-repeat: no-repeat;
     background-position: 74% bottom;
     background-size: 41%;
     .whyChooseUs_content {
+        max-width: 100%;
         display: flex;
         flex-wrap: wrap;
         //justify-content: space-between;
@@ -123,25 +125,24 @@
                     top: 2px;
                     font-size: $fw-1;
                 }
-                .lnr{
+                .lnr {
                     font-size: 55px;
                     position: absolute;
                     right: -7px;
                     bottom: -7px;
                 }
-                .whyChooseUs_block_content{
+                .whyChooseUs_block_content {
                     margin-bottom: $mg-0;
                     margin-left: $mg-4 - 3;
                     flex: 0 1 auto;
-                    h3{
+                    h3 {
                         margin: 0;
                         line-height: 1.2;
                         font-size: 22px;
                     }
                 }
-                
             }
-            .btn{
+            .btn {
                 margin-top: 70px;
             }
         }
