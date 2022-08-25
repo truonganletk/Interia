@@ -542,6 +542,63 @@ header .header_nav .nav_right .nav-item .nav-link:hover::before {
   margin-top: 70px;
 }
 
+footer {
+  background-image: url(../images/bg-price-1920x1128.png);
+  background-color: #2C2C2C;
+  padding: 70px 0 67px;
+}
+footer .footer-title {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+footer .footer-list {
+  margin-top: 20px;
+  margin-bottom: -4px;
+}
+footer .footer-list li {
+  margin-bottom: -4px;
+  color: #ffffff;
+}
+footer .footer-list li a {
+  color: #ffffff;
+}
+footer .footer-list li a:hover {
+  color: #FFDC25;
+}
+footer .footer-logo {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+footer .footer-logo::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  top: 50%;
+  left: 0;
+}
+footer .footer-logo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  top: 50%;
+  right: 0;
+}
+footer .copyright {
+  text-align: center;
+  margin-top: 60px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .portfolio {
   padding-bottom: 0 !important;
 }
