@@ -769,6 +769,155 @@ header .header_nav .nav_right .nav-item .nav-link:hover::before {
   color: #FFDC25;
 }
 
+.brand {
+  background-color: #F5F5F5;
+}
+.brand .quote-item {
+  width: 570px;
+  padding-left: 15px;
+}
+.brand .quote-item .quote-card {
+  display: flex;
+  align-items: center;
+}
+.brand .quote-item .quote-card .quote-avatar {
+  overflow: hidden;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.brand .quote-item .quote-card .quote-description {
+  margin-left: 15px;
+}
+.brand .quote-item .quote-card .quote-description .quote-name {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.27273;
+  color: #2D2D2D;
+}
+.brand .quote-item .quote-card .quote-description .quote-position {
+  margin-top: 8px;
+  color: #000;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 7px;
+}
+.brand .quote-item .quote-card .quote-description .quote-position::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  bottom: -1px;
+  width: 54px;
+  background-color: #ffdc25;
+  z-index: -1;
+}
+.brand .quote-item .quote-text {
+  margin-top: 42px;
+  font-style: italic;
+  letter-spacing: 0;
+  padding-left: 2px;
+  line-height: 1.6;
+  position: relative;
+}
+.brand .quote-item .quote-text p {
+  font-size: 22px;
+}
+.brand .quote-item .quote-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  top: 9px;
+  left: -15px;
+  bottom: 5px;
+  background-color: #000000;
+}
+.brand .owl-theme .owl-dots,
+.brand .owl-theme .owl-nav {
+  padding-left: 15px;
+  text-align: left;
+}
+.brand .owl-theme .owl-dots .owl-dot span,
+.brand .owl-theme .owl-nav .owl-dot span {
+  height: 2px;
+  width: 24px;
+  background-color: #B2B2B2;
+  border: 0;
+  border-radius: 0;
+  transition: all 0.3s ease-in-out;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.brand .owl-theme .owl-dots .owl-dot.active span,
+.brand .owl-theme .owl-nav .owl-dot.active span {
+  width: 41px;
+  background-color: #000;
+}
+.brand .brand-company {
+  width: 398px;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.15);
+  padding: 40px 15px 35px 30px;
+  margin-left: 30px;
+  margin-bottom: 47px;
+}
+.brand .brand-company::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -23px;
+  border: 10px solid #dfdfdf;
+  transform: translate3d(-15px, 10px, 0);
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+  transform: translate3d(-41px, 24px, 0);
+}
+.brand .brand-company::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: inherit;
+}
+.brand .brand-company > * {
+  position: relative;
+  z-index: 1;
+}
+.brand .brand-company .brand-company-title {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: -0.015em;
+}
+.brand .brand-company .brand-company-list {
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: -55px;
+}
+.brand .brand-company .brand-company-list li {
+  flex-basis: 50%;
+  width: 50%;
+  max-width: 50%;
+  min-width: 150px;
+}
+.brand .brand-company .brand-company-list > * {
+  margin-bottom: 55px;
+}
+
 .btn {
   position: relative;
   overflow: hidden;
@@ -821,6 +970,9 @@ header .header_nav .nav_right .nav-item .nav-link:hover::before {
 }
 .section.section-md {
   padding: 109px 0 120px;
+}
+.section.section-xs {
+  padding: 62px 0 70px;
 }
 .section .section-title {
   font-size: 46px;

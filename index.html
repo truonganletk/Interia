@@ -20,6 +20,10 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- owl carousel -->
+
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
 
     <!-- linear icon  -->
 
@@ -530,16 +534,113 @@
         </div>
     </section>
 
+    <section class="brand section section-xs">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    <div class="owl-carousel owl-theme">
+                        <div class="quote-item">
+                            <div class="quote-card">
+                                <div class="quote-avatar"><img src="images/home-10-100x100.jpg" alt="" width="100"
+                                        height="100">
+                                </div>
+                                <div class="quote-description">
+                                    <h4 class="quote-name">Jane Williams</h4>
+                                    <p class="quote-position">Regular client</p>
+                                </div>
+                            </div>
+                            <div class="quote-text">
+                                <p>I chose Interia because of their knowledge, experience and attention to detail that
+                                    has proven invaluable to me in creating a superior finished project, which attracts
+                                    more clients to my shop.</p>
+                            </div>
+                        </div>
+                        <div class="quote-item">
+                            <div class="quote-card">
+                                <div class="quote-avatar"><img src="images/home-08-100x100.jpg" alt="" width="100"
+                                        height="100">
+                                </div>
+                                <div class="quote-description">
+                                    <h4 class="quote-name">
+                                        Kate Peterson</h4>
+                                    <p class="quote-position">Regular client</p>
+                                </div>
+                            </div>
+                            <div class="quote-text">
+                                <p>Interia designed my home from top to bottom, and 5 years later I still appreciate
+                                    their work. They designed built-in cabinetry that works perfectly. They are the most
+                                    reliable designers I’ve ever met.</p>
+                            </div>
+                        </div>
+                        <div class="quote-item">
+                            <div class="quote-card">
+                                <div class="quote-avatar"><img src="images/home-09-100x100.jpg" alt="" width="100"
+                                        height="100">
+                                </div>
+                                <div class="quote-description">
+                                    <h4 class="quote-name">Peter Smith</h4>
+                                    <p class="quote-position">Regular client</p>
+                                </div>
+                            </div>
+                            <div class="quote-text">
+                                <p>This agency was highly recommended to me. The sensitivity, knowledge, vision and
+                                    ultimate execution this firm brought to the table was tremendous. They have
+                                    enormously talented designers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-6">
+                    <div class="brand-company">
+                        <p class="brand-company-title">companies that trust us</p>
+                        <ul class="brand-company-list">
+                            <li><img src="images/brand-01-94x34.png" alt="" width="94" height="34">
+                            </li>
+                            <li><img src="images/brand-02-82x44.png" alt="" width="82" height="44">
+                            </li>
+                            <li><img src="images/brand-03-96x41.png" alt="" width="96" height="41">
+                            </li>
+                            <li><img src="images/brand-04-145x32.png" alt="" width="145" height="32">
+                            </li>
+                            <li><img src="images/brand-05-78x45.png" alt="" width="78" height="45">
+                            </li>
+                            <li><img src="images/brand-06-108x68.png" alt="" width="108" height="68">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- jquery  -->
 
+    <script src="./js/jquery-3.6.0.slim.js"></script>
 
     <!-- Js bootstrap 5.2 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
 
+    <!-- owl carousel js  -->
+
+    <script src="./js/owl.carousel.min.js"></script>
+
     <!-- main  -->
     <script src="./js/main.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>

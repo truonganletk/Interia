@@ -9,6 +9,9 @@
     &.section-md{
         padding: $pd-6 - 1 0 $pd-7;
     }
+    &.section-xs{
+        padding: $pd-8 - 10 0 $pd-8 - 2;
+    }
     .section-title {
         font-size: 46px;
         line-height: 1.17391;

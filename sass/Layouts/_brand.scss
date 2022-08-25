@@ -1,0 +1,150 @@
+.brand {
+    background-color: $gray-2;
+    .quote-item {
+        width: 570px;
+        padding-left: 15px;
+        .quote-card {
+            display: flex;
+            align-items: center;
+            .quote-avatar {
+                overflow: hidden;
+                box-shadow: 7px 7px 10px rgb(0 0 0 / 25%);
+                border-radius: 30px;
+            }
+            .quote-description {
+                margin-left: $mg-0;
+                .quote-name {
+                    font-size: 22px;
+                    font-weight: $fw-1;
+                    letter-spacing: 0;
+                    line-height: 1.27273;
+                    color: $black-3;
+                }
+                .quote-position {
+                    margin-top: $mg-8;
+                    color: $black;
+                    position: relative;
+                    font-size: $fs-0 - 2;
+                    font-weight: $fw-2;
+                    text-transform: uppercase;
+                    padding-left: $pd-3 + 2;
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: -3px;
+                        left: 0;
+                        bottom: -1px;
+                        width: 54px;
+                        background-color: #ffdc25;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+        .quote-text {
+            margin-top: $mg-4 + 2;
+            font-style: italic;
+            letter-spacing: 0;
+            padding-left: 2px;
+            line-height: 1.6;
+            position: relative;
+            p {
+                font-size: 22px;
+            }
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 4px;
+                top: 9px;
+                left: -15px;
+                bottom: 5px;
+                background-color: #000000;
+            }
+        }
+    }
+    .owl-theme .owl-dots,
+    .owl-theme .owl-nav {
+        padding-left: 15px;
+        text-align: left;
+        .owl-dot {
+            span {
+                height: 2px;
+                width: 24px;
+                background-color: $gray-3;
+                border: 0;
+                border-radius: 0;
+                transition: all 0.3s ease-in-out;
+                margin-left: 7px;
+                margin-right: 7px;
+            }
+            &.active {
+                span {
+                    width: 41px;
+                    background-color: $black;
+                }
+            }
+        }
+    }
+    .brand-company {
+        width: 398px;
+        position: relative;
+        background-color: #ffffff;
+        box-shadow: 20px 20px 20px rgb(0 0 0 / 15%);
+        padding: 40px 15px 35px 30px;
+        margin-left: 30px;
+        margin-bottom: 47px;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: -23px;
+            border: 10px solid #dfdfdf;
+            transform: translate3d(-15px, 10px, 0);
+            pointer-events: none;
+            transition: all 0.3s ease-in-out;
+            transform: translate3d(-41px, 24px, 0);
+        }
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: inherit;
+        }
+        & > * {
+            position: relative;
+            z-index: 1;
+        }
+        .brand-company-title {
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #000000;
+            letter-spacing: -0.015em;
+        }
+        .brand-company-list{
+            margin-top: 36px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: -55px;
+            li {
+                flex-basis: 50%;
+                width: 50%;
+                max-width: 50%;
+                min-width: 150px;
+            }
+            &>*{
+                margin-bottom: 55px;
+            }
+        }
+    }
+}
