@@ -1,0 +1,166 @@
+.contact {
+    background-color: $black-1;
+    text-align: center;
+    padding-bottom: 0 !important;
+    .section-subtitle {
+        margin-bottom: $mg-7;
+    }
+    .contact-box {
+        position: relative;
+        padding-bottom: $pd-2 - 3;
+        .contact-box-icon {
+            position: relative;
+            margin: 0 auto;
+            width: 98px;
+            height: 98px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease-in-out;
+            i {
+                color: $white;
+                font-size: $fs-3;
+                position: relative;
+                z-index: 1;
+            }
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: $black-2;
+                box-shadow: 0 8px 20px rgb(0 0 0 / 25%);
+                border-radius: 10px;
+            }
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                right: 5px;
+                bottom: 5px;
+                border: 5px solid $white;
+                border-radius: 10px;
+                opacity: 0.1;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        .contact-box-text {
+            margin-top: $mg-4 - 2;
+            p {
+                color: $white;
+                font-size: $fs-2;
+            }
+        }
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 42px;
+            height: 5px;
+            background-color: #ffdc25;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+            .contact-box-icon {
+                &::before {
+                    top: -15px;
+                    left: -15px;
+                    right: -15px;
+                    bottom: -15px;
+                }
+                &::after {
+                    box-shadow: inset 4px 4px 6px rgb(0 0 0 / 40%);
+                }
+            }
+            &::after {
+                width: 70px;
+            }
+        }
+    }
+    .contact-form-box {
+        background-color: $black-2;
+        margin-top: $mg-7;
+        padding: $pd-8 $pd-4 - 5;
+        .contact-form {
+            padding-right: $pd-2 + 1;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            text-align: center;
+            transform: translate3d(0, -12px, 0);
+            margin-bottom: -12px;
+            margin-left: -6px;
+            margin-right: -6px;
+            position: relative;
+            .form-wrap {
+                flex-grow: 1;
+                min-width: 185px;
+                margin-top: $mg-0 - 3;
+                padding-left: $pd-3 + 1;
+                padding-right: $pd-3 + 1;
+                input {
+                    display: block;
+                    width: 100%;
+                    min-height: 60px;
+                    padding: $pd-0 + 1 $pd-1 + 1;
+                    font-size: $fs-0;
+                    font-weight: $fw-0;
+                    line-height: 27px;
+                    color: $black;
+                    background-color: $gray-2;
+                    border-radius: 4px;
+                    -webkit-appearance: none;
+                    transition: 0.3s ease-in-out;
+                    border: 1px solid $gray-2;
+                }
+            }
+            .form-button {
+                flex-grow: 1;
+                max-width: 100%;
+                min-height: 60px;
+                margin-top: $mg-0 - 3;
+                padding-left: $pd-3 + 1;
+                padding-right: $pd-3 + 1;
+                button {
+                    min-height: inherit;
+                    display: block;
+                    min-width: 208px;
+                    padding-top: $pd-0 - 5;
+                    padding-bottom: $pd-0 - 5;
+                }
+            }
+        }
+        .contact-form-text {
+            text-align: left;
+            p {
+                text-transform: uppercase;
+                color: $gray-1;
+                display: block;
+                font-size: $fs-0 - 2;
+                line-height: 1.28571;
+                font-weight: 500;
+            }
+            h4 {
+                a {
+                    color: $white;
+                    font-size: $fs-2;
+                    line-height: 1.27273;
+                    margin-bottom: 0;
+                    font-weight: $fw-1;
+                    white-space: nowrap;
+                    &:hover {
+                        color: $yellow-1;
+                    }
+                }
+            }
+        }
+    }
+}
