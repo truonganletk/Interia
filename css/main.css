@@ -343,6 +343,19 @@ header.header-fixed .header_nav {
 .banner .banner_right .bannertxt a {
   margin-top: 36px;
 }
+@media (max-width: 1200px) {
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner .banner_left {
+    flex-basis: content;
+  }
+  .banner .banner_left .banner_social_list {
+    flex-direction: row;
+    padding: 52px 0;
+    margin: 0;
+  }
+}
 
 .budget {
   background-color: #2C2C2C;

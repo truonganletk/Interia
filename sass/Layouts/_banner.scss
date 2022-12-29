@@ -85,4 +85,15 @@
             }
         }
     }
+    @include respond-to("xl") {
+        flex-direction: column-reverse;
+        .banner_left{
+            flex-basis: content;
+            .banner_social_list{
+                flex-direction: row;
+                padding: $pd-4 0;
+                margin: 0;
+            }
+        }
+    }
 }
