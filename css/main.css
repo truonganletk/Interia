@@ -94,7 +94,6 @@ header {
 header .header_nav {
   padding-left: 15px;
   padding-right: 15px;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,13 +108,23 @@ header .header_nav .nav-item {
 header .header_nav .nav-link {
   text-decoration: none;
 }
-header .header_nav .nav_left .nav-item {
+header .header_nav .nav_left-icon {
+  display: none;
+}
+header .header_nav .nav_left-icon .lnr {
+  font-size: 30px;
+  color: white;
+}
+header .header_nav .nav_left-items {
+  display: block;
+}
+header .header_nav .nav_left-items .nav-item {
   margin-left: 30px;
 }
-header .header_nav .nav_left .nav-item:first-child {
+header .header_nav .nav_left-items .nav-item:first-child {
   margin-left: 0;
 }
-header .header_nav .nav_left .nav-item .nav-link {
+header .header_nav .nav_left-items .nav-item .nav-link {
   position: relative;
   display: inline-block;
   color: rgba(255, 255, 255, 0.6);
@@ -124,10 +133,10 @@ header .header_nav .nav_left .nav-item .nav-link {
   line-height: 1.2;
   transition: 0.25s;
 }
-header .header_nav .nav_left .nav-item .nav-link:hover {
+header .header_nav .nav_left-items .nav-item .nav-link:hover {
   color: #ffffff;
 }
-header .header_nav .nav_left .nav-item.active .nav-link {
+header .header_nav .nav_left-items .nav-item.active .nav-link {
   color: #ffffff;
   background: transparent;
 }
@@ -135,16 +144,26 @@ header .header_nav .nav_logo .logo {
   max-width: 200px;
   max-height: 200px;
 }
-header .header_nav .nav_right .nav-item {
+header .header_nav .nav_right-icon {
+  display: none;
+}
+header .header_nav .nav_right-icon .lnr {
+  font-size: 30px;
+  color: white;
+}
+header .header_nav .nav_right-items {
+  display: block;
+}
+header .header_nav .nav_right-items .nav-item {
   padding-left: 22px;
   padding-right: 22px;
 }
-header .header_nav .nav_right .nav-item .nav-link {
+header .header_nav .nav_right-items .nav-item .nav-link {
   color: #FCFCFC;
   transition: all 0.3s ease-in-out;
   position: relative;
 }
-header .header_nav .nav_right .nav-item .nav-link::before {
+header .header_nav .nav_right-items .nav-item .nav-link::before {
   content: "";
   position: absolute;
   display: block;
@@ -153,11 +172,88 @@ header .header_nav .nav_right .nav-item .nav-link::before {
   bottom: 12px;
   transition: all 0.3s ease-in-out;
 }
-header .header_nav .nav_right .nav-item .nav-link:hover::before {
+header .header_nav .nav_right-items .nav-item .nav-link:hover::before {
   width: 100%;
   margin: 0 auto;
   bottom: -3px;
   background-color: rgba(255, 255, 255, 0.3);
+}
+@media (max-width: 1200px) {
+  header {
+    width: 100%;
+    height: unset;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  }
+  header .header_nav {
+    padding: 10px 0;
+  }
+  header .header_nav .nav_left-icon {
+    display: block;
+  }
+  header .header_nav .nav_left-items {
+    display: none;
+  }
+  header .header_nav .nav_left-items.navleft-lg {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    background-color: #2C2C2C;
+    top: 100%;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+  }
+  header .header_nav .nav_left-items.navleft-lg .nav-item {
+    margin-left: 0;
+    display: block;
+  }
+  header .header_nav .nav_left-items.navleft-lg .nav-item .nav-link {
+    position: relative;
+    padding: 15px 52px;
+  }
+  header .header_nav .nav_left-items.navleft-lg .nav-item.active .nav-link {
+    color: #ffffff;
+    background: transparent;
+  }
+  header .header_nav .nav_right-icon {
+    display: block;
+  }
+  header .header_nav .nav_right-items {
+    display: none;
+  }
+  header .header_nav .nav_right-items.navright-lg {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    background-color: #2C2C2C;
+    top: 100%;
+    right: 0;
+    width: unset;
+  }
+  header .header_nav .nav_right-items.navright-lg .nav-item {
+    margin-left: 0;
+    display: block;
+    padding: 15px 52px;
+  }
+  header .header_nav .nav_right-items.navright-lg .nav-item .nav-link {
+    position: relative;
+  }
+  header .header_nav .nav_right-items.navright-lg .nav-item.active .nav-link {
+    color: #ffffff;
+    background: transparent;
+  }
+}
+header.header-fixed {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: unset;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+header.header-fixed .header_nav {
+  padding: 10px 0;
 }
 
 .banner {

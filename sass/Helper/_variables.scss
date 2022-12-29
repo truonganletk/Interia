@@ -62,3 +62,13 @@ $mg-5:103px;
 $mg-6:60px;
 $mg-7:83px;
 $mg-8:8px;
+
+// breakpoints
+$breakpoints: (
+ xs: 0,
+ sm: 576px,
+ md: 768px,
+ lg: 992px,
+ xl: 1200px,
+ xxl: 1400px
+);
