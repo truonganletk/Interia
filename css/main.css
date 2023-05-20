@@ -72,11 +72,11 @@ input, button, select, textarea {
 }
 @media (min-width: 768px) {
   .portfolio .carousel-inner .carousel-item-end.active,
-.portfolio .carousel-inner .carousel-item-next {
+  .portfolio .carousel-inner .carousel-item-next {
     transform: translateX(33.33%);
   }
   .portfolio .carousel-inner .carousel-item-start.active,
-.portfolio .carousel-inner .carousel-item-prev {
+  .portfolio .carousel-inner .carousel-item-prev {
     transform: translateX(-33.33%);
   }
 }
@@ -512,7 +512,7 @@ header.header-fixed .header_nav {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  margin: 0 -15px;
 }
 .whyChooseUs .whyChooseUs_content .whyChooseUs_gallery {
   width: 100%;
@@ -602,10 +602,16 @@ header.header-fixed .header_nav {
   height: 170px;
   top: 100%;
 }
+@media (max-width: 576px) {
+  .whyChooseUs .whyChooseUs_content .whyChooseUs_card::after {
+    display: none;
+  }
+}
 .whyChooseUs .whyChooseUs_content .whyChooseUs_text {
   counter-reset: li;
-  flex: 0 0 33.33333%;
-  max-width: 33.33333%;
+  flex: 0 0 38.33333%;
+  max-width: 38.33333%;
+  padding-left: 35px;
 }
 .whyChooseUs .whyChooseUs_content .whyChooseUs_text h2 {
   font-size: 46px;
@@ -649,6 +655,44 @@ header.header-fixed .header_nav {
 }
 .whyChooseUs .whyChooseUs_content .whyChooseUs_text .btn {
   margin-top: 70px;
+}
+@media (max-width: 1200px) {
+  .whyChooseUs .whyChooseUs_content {
+    flex-direction: column-reverse;
+    margin: 0 15px;
+  }
+  .whyChooseUs .whyChooseUs_content .whyChooseUs_gallery {
+    margin-top: 23px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .whyChooseUs .whyChooseUs_content .whyChooseUs_gallery .whyChooseUs_gallery_left {
+    margin-top: 0;
+  }
+  .whyChooseUs .whyChooseUs_content .whyChooseUs_text {
+    flex: 0 0 100%;
+    padding-left: 0;
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .whyChooseUs .whyChooseUs_content .whyChooseUs_gallery {
+    margin-top: 23px;
+  }
+  .whyChooseUs .whyChooseUs_content .whyChooseUs_gallery .whyChooseUs_gallery_left {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .whyChooseUs .whyChooseUs_content .whyChooseUs_gallery .whyChooseUs_gallery_right {
+    margin-top: 30px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .whyChooseUs .whyChooseUs_content .whyChooseUs_text {
+    flex: 0 0 100%;
+    padding-left: 0;
+    max-width: 100%;
+  }
 }
 
 footer {
@@ -1131,6 +1175,11 @@ footer .copyright {
 .section.section-lg {
   padding: 144px 0 142px;
 }
+@media (max-width: 576px) {
+  .section.section-lg {
+    padding: 9px 0 7px;
+  }
+}
 .section.section-sm {
   padding: 109px 0 120px;
 }
@@ -1154,6 +1203,28 @@ footer .copyright {
   font-size: 22px;
   font-weight: 500;
   color: #FFDC25;
+}
+
+.row-custom {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  gap: 0;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (max-width: 576px) {
+  .row-custom {
+    margin-right: 0;
+    margin-left: 0;
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .container.container-custom-right {

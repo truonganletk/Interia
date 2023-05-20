@@ -1,4 +1,4 @@
-.row{
+.row-custom {
     display: flex;
     flex-wrap: wrap;
     margin-right: -$pd-0;
@@ -7,6 +7,13 @@
     position: relative;
     width: 100%;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: $pd-0;
+    padding-left: $pd-0;
+    @include respond-to("sm") {
+        margin-right: 0;
+        margin-left: 0;
+        flex-direction: column;
+        padding-right: 0;
+        padding-left: 0;
+    }
 }

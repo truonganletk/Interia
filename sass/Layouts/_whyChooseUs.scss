@@ -8,8 +8,7 @@
         max-width: 100%;
         display: flex;
         flex-wrap: wrap;
-        //justify-content: space-between;
-        margin: 0 -$mg-0;
+        margin: 0 0-$mg-0;
         .whyChooseUs_gallery {
             width: 100%;
             position: relative;
@@ -85,6 +84,7 @@
                         right: 0;
                         transform: skewY(42deg);
                         transform-origin: 0 50%;
+                        
                     }
                 }
             }
@@ -96,12 +96,16 @@
                 width: 131px;
                 height: 170px;
                 top: 100%;
+                @include respond-to("sm") {
+                    display: none;
+                }
             }
         }
         .whyChooseUs_text {
             counter-reset: li;
-            flex: 0 0 33.33333%;
-            max-width: 33.33333%;
+            flex: 0 0 38.33333%;
+            max-width: 38.33333%;
+            padding-left: $pd-2;
             h2 {
                 font-size: 46px;
                 line-height: 1.17391;
@@ -144,6 +148,46 @@
             }
             .btn {
                 margin-top: 70px;
+            }
+        }
+    }
+    @include respond-to("xl") {
+        .whyChooseUs_content {
+            flex-direction: column-reverse;
+            margin: 0 $mg-0;
+            .whyChooseUs_gallery {
+                margin-top: $mg-2;
+                flex: 0 0 100%;
+                max-width: 100%;
+                .whyChooseUs_gallery_left {
+                    margin-top: 0;
+                }
+            }
+            .whyChooseUs_text {
+                flex: 0 0 100%;
+                padding-left: 0;
+                max-width: 100%;
+            }
+        }
+    }
+    @include respond-to("sm") {
+        .whyChooseUs_content {
+            .whyChooseUs_gallery {
+                margin-top: $mg-2;
+                .whyChooseUs_gallery_left {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+                .whyChooseUs_gallery_right {
+                    margin-top: $mg-1;
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+            .whyChooseUs_text {
+                flex: 0 0 100%;
+                padding-left: 0;
+                max-width: 100%;
             }
         }
     }

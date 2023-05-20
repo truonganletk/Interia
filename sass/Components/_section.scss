@@ -2,6 +2,9 @@
     position: relative;
     &.section-lg{
         padding: $pd-5 + 4 0 $pd-5 + 2;
+        @include respond-to("sm") {
+            padding: $pd-3 + 4 0 $pd-3 + 2;
+        }
     }
     &.section-sm{
         padding: $pd-6 - 1 0 $pd-7;
