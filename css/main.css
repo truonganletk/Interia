@@ -868,9 +868,17 @@ footer .copyright {
   color: #2d2d2d;
   letter-spacing: -0.02em;
 }
+@media (max-width: 768px) {
+  .portfolio .portfolio_title {
+    margin-bottom: 30px;
+  }
+}
 .portfolio .carousel {
   padding: 34px 0 100px;
   margin-top: 60px;
+}
+.portfolio .carousel .carousel-item {
+  position: relative;
 }
 .portfolio .carousel .carousel-item .item-block {
   padding-right: 30px;
@@ -910,6 +918,11 @@ footer .copyright {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
   background-color: #2C2C2C;
+}
+@media (max-width: 768px) {
+  .portfolio .carousel {
+    margin-top: 17px;
+  }
 }
 
 .contact {
@@ -996,6 +1009,11 @@ footer .copyright {
 .contact .contact-box:hover::after {
   width: 70px;
 }
+@media (max-width: 768px) {
+  .contact .contact-box {
+    margin-bottom: 40px;
+  }
+}
 .contact .contact-form-box {
   background-color: #3b3b3b;
   margin-top: 83px;
@@ -1031,7 +1049,6 @@ footer .copyright {
   color: #000;
   background-color: #F5F5F5;
   border-radius: 4px;
-  -webkit-appearance: none;
   transition: 0.3s ease-in-out;
   border: 1px solid #F5F5F5;
 }
@@ -1048,7 +1065,18 @@ footer .copyright {
   display: block;
   min-width: 208px;
   padding-top: 10px;
+  width: 100%;
   padding-bottom: 10px;
+}
+@media (max-width: 992px) {
+  .contact .contact-form-box .contact-form .form-button {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .contact .contact-form-box .contact-form {
+    padding-right: 0;
+  }
 }
 .contact .contact-form-box .contact-form-text {
   text-align: left;

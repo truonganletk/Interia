@@ -18,11 +18,15 @@
         font-weight: 600;
         color: #2d2d2d;
         letter-spacing: -0.02em;
+        @include respond-to("md") {
+            margin-bottom: $mg-1;
+        }
     }
     .carousel {
         padding: 34px 0 100px;
         margin-top: $mg-6;
         .carousel-item {
+            position: relative;
             .item-block {
                 padding-right: 30px;
             }
@@ -62,6 +66,9 @@
                 transition: all 0.3s ease-in-out;
                 background-color: $black-1;
             }
+        }
+        @include respond-to("md") {
+            margin-top: $mg-3;
         }
     }
 }

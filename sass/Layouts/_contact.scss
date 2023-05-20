@@ -84,6 +84,9 @@
                 width: 70px;
             }
         }
+        @include respond-to("md") {
+            margin-bottom: $mg-4;
+        }
     }
     .contact-form-box {
         background-color: $black-2;
@@ -117,7 +120,6 @@
                     color: $black;
                     background-color: $gray-2;
                     border-radius: 4px;
-                    -webkit-appearance: none;
                     transition: 0.3s ease-in-out;
                     border: 1px solid $gray-2;
                 }
@@ -134,8 +136,15 @@
                     display: block;
                     min-width: 208px;
                     padding-top: $pd-0 - 5;
+                    width: 100%;
                     padding-bottom: $pd-0 - 5;
                 }
+                @include respond-to("lg") {
+                    margin-bottom: $mg-4;
+                }
+            }
+            @include respond-to("md") {
+                padding-right: 0;
             }
         }
         .contact-form-text {
