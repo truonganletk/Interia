@@ -411,6 +411,21 @@ header.header-fixed .header_nav {
   left: -239px;
   display: block;
 }
+@media (max-width: 1400px) {
+  .budget .owl-pagination .owl-dots.active span::after {
+    left: -193px;
+  }
+}
+@media (max-width: 1200px) {
+  .budget .owl-pagination .owl-dots.active span::after {
+    left: -143px;
+  }
+}
+@media (max-width: 992px) {
+  .budget .owl-pagination .owl-dots.active span::after {
+    left: -143px;
+  }
+}
 .budget .owl-pagination .owl-dots span {
   font-weight: 500;
   font-size: 22px;
@@ -426,6 +441,76 @@ header.header-fixed .header_nav {
   height: 16px;
   width: 2px;
   background: #ffffff;
+}
+.budget .budget-mobile {
+  display: none;
+  /*style the arrow inside the select element:*/
+  /*style the items (options), including the selected item:*/
+  /*style items (options):*/
+  /*hide the items when the select box is closed:*/
+}
+.budget .budget-mobile .budget-select {
+  width: 300px;
+  position: relative;
+  margin: 50px auto;
+}
+.budget .budget-mobile .budget-select select {
+  display: none; /*hide original SELECT element:*/
+}
+.budget .budget-mobile .select-selected {
+  color: #ffffff;
+  background-color: #3b3b3b;
+  border-color: #3b3b3b;
+  box-shadow: 3px 8px 20px 0 rgba(255, 220, 37, 0.2);
+}
+.budget .budget-mobile .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 70px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+.budget .budget-mobile .select-items div,
+.budget .budget-mobile .select-selected {
+  color: #ffffff;
+  padding: 28px 26px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+.budget .budget-mobile .select-items {
+  position: absolute;
+  color: #ffffff;
+  background-color: #3b3b3b;
+  border-color: #3b3b3b;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.budget .budget-mobile .select-hide {
+  display: none;
+}
+.budget .budget-mobile .select-items div:hover,
+.budget .budget-mobile .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 992px) {
+  .budget .budget-mobile {
+    display: block;
+  }
+}
+.budget .budget-desktop {
+  display: block;
+}
+@media (max-width: 992px) {
+  .budget .budget-desktop {
+    display: none;
+  }
 }
 .budget .budget-option {
   margin-top: 30px;
@@ -499,6 +584,15 @@ header.header-fixed .header_nav {
   border-style: solid;
   border-width: 4px 0 4px 8px;
   border-color: transparent transparent transparent #ffdc25;
+}
+@media (max-width: 992px) {
+  .budget .budget-option .budget-item .list-decorative {
+    display: block;
+  }
+  .budget .budget-option .budget-item .list-decorative li {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .whyChooseUs {

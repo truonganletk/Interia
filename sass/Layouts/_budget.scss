@@ -53,6 +53,29 @@
                         display: block;
                     }
                 }
+
+                @include respond-to("xxl") {
+                    span {
+                        &::after {
+                            left: -193px;
+                        }
+                    }
+                }
+
+                @include respond-to("xl") {
+                    span {
+                        &::after {
+                            left: -143px;
+                        }
+                    }
+                }
+                @include respond-to("lg") {
+                    span {
+                        &::after {
+                            left: -143px;
+                        }
+                    }
+                }
             }
             span {
                 font-weight: $fw-2;
@@ -70,6 +93,80 @@
                     background: #ffffff;
                 }
             }
+        }
+    }
+    .budget-mobile {
+        display: none;
+
+        .budget-select {
+            width: 300px;
+            position: relative;
+            margin: 50px auto;
+        }
+
+        .budget-select select {
+            display: none; /*hide original SELECT element:*/
+        }
+
+        .select-selected {
+            color: #ffffff;
+            background-color: #3b3b3b;
+            border-color: #3b3b3b;
+            box-shadow: 3px 8px 20px 0 rgba(255, 220, 37, 0.2);
+        }
+
+        /*style the arrow inside the select element:*/
+        .select-selected:after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            right: 70px;
+            width: 0;
+            height: 0;
+            border: 6px solid transparent;
+            border-color: #fff transparent transparent transparent;
+        }
+
+        /*style the items (options), including the selected item:*/
+        .select-items div,
+        .select-selected {
+            color: #ffffff;
+            padding: 28px 26px;
+            border: 1px solid transparent;
+            border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        /*style items (options):*/
+        .select-items {
+            position: absolute;
+            color: #ffffff;
+            background-color: #3b3b3b;
+            border-color: #3b3b3b;
+            top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 99;
+        }
+
+        /*hide the items when the select box is closed:*/
+        .select-hide {
+            display: none;
+        }
+
+        .select-items div:hover,
+        .same-as-selected {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        @include respond-to("lg") {
+            display: block;
+        }
+    }
+    .budget-desktop {
+        display: block;
+        @include respond-to("lg") {
+            display: none;
         }
     }
     .budget-option {
@@ -142,6 +239,13 @@
                         border-style: solid;
                         border-width: 4px 0 4px 8px;
                         border-color: transparent transparent transparent #ffdc25;
+                    }
+                }
+                @include respond-to("lg") {
+                    display: block;
+                    li {
+                        max-width: 100%;
+                        width: 100%;
                     }
                 }
             }
