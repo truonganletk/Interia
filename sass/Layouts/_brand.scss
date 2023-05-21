@@ -2,6 +2,7 @@
     background-color: $gray-2;
     .quote-item {
         width: 570px;
+        max-width: 100%;
         padding-left: 15px;
         .quote-card {
             display: flex;
@@ -88,12 +89,13 @@
         }
     }
     .brand-company {
+        max-width: 100%;
         width: 398px;
         position: relative;
         background-color: #ffffff;
         box-shadow: 20px 20px 20px rgb(0 0 0 / 15%);
         padding: 40px 15px 35px 30px;
-        margin-left: 30px;
+        margin:0 auto;
         margin-bottom: 47px;
         &::before {
             content: "";
